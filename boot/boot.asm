@@ -1,7 +1,7 @@
 [org 0x7c00]
 
 mov ah, 0x0e
-mov bx, [hello]
+mov bx, hello
 
 printHello:
     mov al, [bx]
