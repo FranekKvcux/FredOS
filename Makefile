@@ -4,7 +4,7 @@ KERNEL = kernel
 
 # Run os.bin by qemu
 run: os.bin
-	qemu-system-i386 os.bin
+	qemu-system-i386 -drive format=raw,file=os.bin
 
 # Build os.bin
 os.bin: $(KERNEL)/kernel.bin $(BOOT)/boot.bin
